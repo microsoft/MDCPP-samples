@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "outDir": "./lib",
+    "target": "es6",
+    "module": "es6",
+    "lib": [
+      "dom",
+      "scripthost",
+      "es6"
+    ],
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "noEmitOnError": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "forceConsistentCasingInFileNames": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "dist",
+    "webpack.*"
+  ]
+}
