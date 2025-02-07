@@ -47,7 +47,7 @@ Follow these instructions to configure a sample app in your test tenant.
    ENTRA_APPID = [your Entra client ID]
    ```
 
-1. In a terminal, run `yarn` from the repo's root directory to download dependencies.
+1. In a terminal, run the following command from the repo's root directory to download dependencies.
 
    ```text
    yarn
