@@ -39,7 +39,8 @@ Follow these instructions to configure a sample app in your test tenant.
 ## Run the sample app locally
 
 1. Fork this repo then clone your fork locally.
-1. In the repo's root directory, create a new file named **.env**.
+1. Navigate to and open the root directory of the sample **present-live-integration-app-sample**.
+1. Create a new file named **.env** in the sample's root directory.
 1. Open the .env file in your preferred code editor.
 1. Add the following line to the .env file, replacing "[your Entra client ID]" with your Entra sample app's client ID. You can find the ID by navigating to the **Overview** tab in your app's registration page, listed under **Application (client) ID** in the **Essentials** dropdown menu near the top of the page.
 
