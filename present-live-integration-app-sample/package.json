@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@azure/msal-browser": "^3.21.0",
-    "@microsoft/document-collaboration-sdk": "^1.0.3",
+    "@microsoft/document-collaboration-sdk": "^1.0.4",
     "dotenv": "^16.4.7",
     "uuid": "^10.0.0"
   },

@@ -300,10 +300,10 @@
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.5.tgz#4fc56c15c580b9adb7dc3c333a134e540b44bfb1"
   integrity sha512-Vo+PSpZG2/fmgmiNzYK9qWRh8h/CHrwD0mo1h1DzL4yzHNSfWYujGTYsWGreD000gcgmZ7K4Ys6Tx9TxtsKdDw==
 
-"@microsoft/document-collaboration-sdk@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@microsoft/document-collaboration-sdk/-/document-collaboration-sdk-1.0.3.tgz#bad2d6a91ff777bb3d53b921d4de9524fa1d5226"
-  integrity sha512-lOEvWpq7kHdBZ/e5cnidAW5hvyImC246mBd8rzrmZJjM2FEM3RdRN2330Naoqzj4k8FGm0YOnXhLgTVvoP1qzg==
+"@microsoft/document-collaboration-sdk@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@microsoft/document-collaboration-sdk/-/document-collaboration-sdk-1.0.4.tgz#3a763cbb70b90f8a971d9c836b69a8ef06c8c44c"
+  integrity sha512-g9STSBghCqFDjMLB4p0Rqu76RI4hFJ347dGJTDs7KbD3pRU/8FcQwjpxCOaNSU0WQlchtS7FiJugJYst2zgpCg==
 
 "@parcel/watcher-android-arm64@2.5.0":
   version "2.5.0"
