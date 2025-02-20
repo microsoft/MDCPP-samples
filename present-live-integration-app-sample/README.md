@@ -79,3 +79,42 @@ Follow these instructions to configure a sample app in your test tenant.
 1. Choose **Present** at the bottom right.
 
 A new browser tab should open that contains the attendee view. The initial browser tab will contain the presenter view. You may need to allow browser popups to see the new attendee tab.
+
+## Using HTTPS
+
+The MDCPP endpoints require the host app to support HTTPS for security. Please ensure your app is served using HTTPS. There are many ways to achieve this depending on your setup. Here are two methods that aren't specific to this program that use open source or free software.
+
+### Method 1: Ngrok
+
+1. Install and setup [ngrok](https://ngrok.com/download).
+1. Create an account on ngrok.com.
+1. Run `ngrok config add-authtoken [your auth token]`.
+1. Run `ngrok http 8080` and copy the Forwarding URL from terminal.
+1. Go to the [Azure App registrations page](https://aka.ms/AppRegistrations/?referrer=https%3A%2F%2Fdev.onedrive.com) and add the Forwarding URL to the list of approved Redirect URLs.
+1. Follow instructions to run the present-live test app on localhost.
+1. Open the app using the Forwarding URL.
+
+### Method 2: mkcert (No need to add Redirect URL to registered App)
+
+1. Install [mkcert](https://github.com/FiloSottile/mkcert).
+1. Run `mkcert localhost 127.0.0.1` to generate a certificate for the host you are using locally. The output should show the path to the generated cert and key.
+1. Open the webpack.config.js file in this repo's root directory and add the [devServer](https://webpack.js.org/configuration/dev-server/#devserverserver) configs to use the generated files.
+
+  ```text
+  devServer: {
+    server: {
+      type: 'https',
+      options: {
+        ca: './path/to/server.pem',
+        pfx: './path/to/server.pfx',
+        key: './path/to/server.key',
+        cert: './path/to/server.crt',
+        passphrase: 'webpack-dev-server',
+        requestCert: true,
+      },
+    },
+  },
+  ```
+
+1. You can find the path to the CA by running `mkcert -CAROOT`.
+1. Start the present-live test app using localhost.
