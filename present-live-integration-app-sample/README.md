@@ -78,7 +78,9 @@ Follow these instructions to configure a sample app in your test tenant.
 1. Select your test PowerPoint file from the file picker.
 1. Choose **Present** at the bottom right.
 
-A new browser tab should open that contains the attendee view. The initial browser tab will contain the presenter view. You may need to allow browser popups to see the new attendee tab.
+A new browser tab should open that contains the attendee view. The initial browser tab will contain the presenter view. You may need to allow browser popups in order to see the new attendee tab.
+
+However, for you to test out the present-live functionality fully, you'll need to support HTTPS. See the following section [Using HTTPS](#using-https) for details.
 
 ## Using HTTPS
 
@@ -91,7 +93,7 @@ The MDCPP endpoints require the host app to support HTTPS for security. Please e
 1. Run `ngrok config add-authtoken [your auth token]`.
 1. Run `ngrok http 8080` and copy the Forwarding URL from terminal.
 1. Go to the [Azure App registrations page](https://aka.ms/AppRegistrations/?referrer=https%3A%2F%2Fdev.onedrive.com) and add the Forwarding URL to the list of approved Redirect URLs.
-1. Follow instructions to run the present-live test app on localhost.
+1. To run the present-live test app on localhost, follow the instructions starting at step 8 in the [Run the sample app locally](#run-the-sample-app-locally) section, but instead navigating to `https://localhost:8080/desktop.html`.
 1. Open the app using the Forwarding URL.
 
 ### Method 2: mkcert (No need to add Redirect URL to registered App)
@@ -117,4 +119,4 @@ The MDCPP endpoints require the host app to support HTTPS for security. Please e
   ```
 
 1. You can find the path to the CA by running `mkcert -CAROOT`.
-1. Start the present-live test app using localhost.
+1. Start the present-live test app using localhost, following the instructions starting at step 8 in the [Run the sample app locally](#run-the-sample-app-locally) section, but instead navigate to `https://localhost:8080/desktop.html`.
