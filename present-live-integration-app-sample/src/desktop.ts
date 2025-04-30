@@ -34,7 +34,7 @@ function loadPresenterExperience()
     };
 
     const userInfo: MicrosoftMeetings.UserInfo = {
-        userId: 'prototype_unknownUser',
+        userId: 'prototype-unknownUser',
         participantId: uuidv4(),
         displayName: "User1"
     };
