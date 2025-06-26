@@ -1,13 +1,11 @@
 # Present-live Sample Integration App
 
-The present-live experience is currently available for dev preview in the [MDCPP npm package](https://aka.ms/MDCPP-npm-package). This sample app demonstrates how to use the MDCPP npm package to integrate this experience.
+The present-live experience is currently available in the [MDCPP npm package](https://aka.ms/MDCPP-npm-package). This sample app demonstrates how to use the MDCPP npm package to integrate this experience.
 
 The present-live experience allows meeting participants to interact and collaborate using PowerPoint Live directly in your collaboration app. For more about the present-live experience and how to implement it in your app, see [Integrate present-live experiences in the Microsoft 365 Document Collaboration Partner Program](https://learn.microsoft.com/microsoft-365/document-collaboration-partner-program/scenarios/present).
 
 > **IMPORTANT**:
->
-> - You must be a member of the Microsoft 365 Document Collaboration Partner Program in order to access MDCPP services.
-> - For the dev preview, don't use any Microsoft 365 accounts that contain real user data. Data for this experience is being hosted on development endpoints.
+> You must be a member of the Microsoft 365 Document Collaboration Partner Program in order to access MDCPP services.
 
 ## Set up
 
