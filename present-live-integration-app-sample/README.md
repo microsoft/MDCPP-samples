@@ -100,21 +100,21 @@ The MDCPP endpoints require the host app to support HTTPS for security. Please e
 1. Run `mkcert localhost 127.0.0.1` to generate a certificate for the host you are using locally. The output should show the path to the generated cert and key.
 1. Open the webpack.config.js file in this repo's root directory and add the [devServer](https://webpack.js.org/configuration/dev-server/#devserverserver) configs to use the generated files.
 
-  ```text
-  devServer: {
-    server: {
-      type: 'https',
-      options: {
-        ca: './path/to/server.pem',
-        pfx: './path/to/server.pfx',
-        key: './path/to/server.key',
-        cert: './path/to/server.crt',
-        passphrase: 'webpack-dev-server',
-        requestCert: true,
-      },
-    },
-  },
-  ```
+   ```text
+   devServer: {
+     server: {
+       type: 'https',
+       options: {
+         ca: './path/to/server.pem',
+         pfx: './path/to/server.pfx',
+         key: './path/to/server.key',
+         cert: './path/to/server.crt',
+         passphrase: 'webpack-dev-server',
+         requestCert: true,
+       },
+     },
+   },
+   ```
 
 1. You can find the path to the CA by running `mkcert -CAROOT`.
 1. Start the present-live test app using localhost, following the instructions starting at step 8 in the [Run the sample app locally](#run-the-sample-app-locally) section, but instead navigate to `https://localhost:8080/desktop.html`.
